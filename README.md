@@ -16,8 +16,11 @@ ml
 
 ## dev
 
+activate virtual environment
+`make activate`
+
 install packages
-`pip install -r requirements.txt`
+`make install`
 
 install and upgrade outdated packages
-`pip install -U -r requirements.txt`
+`make upgrade`
