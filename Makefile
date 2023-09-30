@@ -6,3 +6,6 @@ install:
 
 upgrade:
 	pip install -U -r requirements.txt
+
+update-requirements:
+	pip freeze > requirements.txt
