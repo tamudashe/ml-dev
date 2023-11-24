@@ -1,6 +1,3 @@
-activate:
-	source env/bin/activate
-
 install:
 	pip3 install -r requirements.txt
 
