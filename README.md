@@ -16,9 +16,6 @@ ml
 
 ## dev
 
-activate virtual environment
-`make activate`
-
 install packages
 `make install`
 
