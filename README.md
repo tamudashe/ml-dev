@@ -1,6 +1,15 @@
 # ml-dev
 
-ml
+Machine learning development environment with Jupyter notebooks and data science tools.
+
+## Environment Setup
+
+Activate the Python environment before working:
+```bash
+conda activate ml
+# or
+source activate ml
+```
 
 ## Data repositories
 
