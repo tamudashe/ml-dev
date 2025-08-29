@@ -4,11 +4,21 @@ Machine learning development environment with Jupyter notebooks and data science
 
 ## Environment Setup
 
-Activate the Python environment before working:
+This project uses pyenv with the `ml` environment. 
+
+### Quick Start
 ```bash
-conda activate ml
-# or
-source activate ml
+# Activate environment and start shell
+make shell
+
+# Just show activation command
+make activate
+```
+
+### Manual Activation
+```bash
+eval "$(pyenv init -)"
+pyenv activate ml
 ```
 
 ## Data repositories
@@ -23,10 +33,20 @@ source activate ml
 -   [Quora.com](https://www.quora.com/Where-can-I-find-large-datasets-open-to-the-public)
 -   [The datasets subreddit](https://www.reddit.com/r/datasets/)
 
-## dev
+## Development
 
-install packages
-`make install`
+All commands automatically activate the `ml` environment:
 
-install and upgrade outdated packages
-`make upgrade`
+```bash
+# Install packages
+make install
+
+# Install and upgrade outdated packages  
+make upgrade
+
+# Update requirements.txt
+make update-requirements
+
+# Start shell with environment activated
+make shell
+```

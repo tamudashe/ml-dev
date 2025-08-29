@@ -1,8 +1,15 @@
+activate:
+	@echo "Run: eval \"\$$(pyenv init -)\" && pyenv activate ml"
+
+shell:
+	@echo "Starting shell with ml environment..."
+	@eval "$$(pyenv init -)" && pyenv activate ml && exec $$SHELL
+
 install:
-	pip3 install -r requirements.txt
+	@eval "$$(pyenv init -)" && pyenv activate ml && pip3 install -r requirements.txt
 
 upgrade:
-	pip install -U -r requirements.txt
+	@eval "$$(pyenv init -)" && pyenv activate ml && pip install -U -r requirements.txt
 
 update-requirements:
-	pip freeze > requirements.txt
+	@eval "$$(pyenv init -)" && pyenv activate ml && pip freeze > requirements.txt
